@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(32, 38, 44);
+}
+
+.sidebar {
+    position: fixed;    
+    width: 60px;    
+    height: 100vh;
+    background-color: rgb(46, 51, 57);
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0 ,0, 0.5);
+    transition: width 0.3s ease;    
+}
+
+.sidebar:hover {
+    width: 180px;
+}
+
+.menu {    
+    margin-top: 30vh;
+}
+
+.menu-item a {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-decoration: none;
+}
+
+.menu-item:hover {    
+    box-shadow: 0 0 15px rgba(0, 0 , 0, 0.5); 
+}
+
+.menu-icon img {
+    margin-left: 15px;
+    height: 30px;
+    width: 30px;
+    filter: invert(98%) sepia(1%) saturate(0%) hue-rotate(171deg) brightness(102%) contrast(102%);    
+}
+
+.menu-tittle {
+    width: 100%;
+    margin-left: 20px;
+    text-align: left;
+    color: white;    
+    font-size: 21px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 930px;    
+    padding: 0 15px 0 75px;
+    margin: 0 auto;
+    font-size: 18px;    
+    text-align: justify;
+    color: white;    
+}
+
+.about .container {
+    flex-wrap: wrap-reverse;
+    flex-direction: row;    
+}
+
+.about h1, .my-photo {
+    padding: auto;
+    margin: auto;    
+}
+
+.my-photo {
+    margin-top: 15px;
+}
+
+.about h1 {    
+    font-size: 40px;
+    font-weight: 100;     
+}
+
+.about h1 span {
+    font-weight: 700;    
+}
+
+.about .my-photo {    
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);    
+}
+
+.about-information {
+    margin: 25px 0;    
+}
+
+.projects {    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(49, 55, 61);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.project {
+    display: flex;
+    flex-direction: row;    
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    justify-content: center;    
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s;    
+}
+
+.project:hover {        
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.project-link a {    
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.project-link img {    
+    height: 150px;    
+    border-radius: 7px;
+}
+
+.project-description {    
+    width: 100%;
+    margin: auto;
+    margin-left: 25px;
+    margin-right: 15px;
+}
+
+.contact .container {        
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact a {    
+    margin: 25px 15px;    
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact img {
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.contact img:hover {    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);    
+}
